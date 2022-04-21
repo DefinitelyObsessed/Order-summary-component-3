@@ -1,0 +1,165 @@
+body {
+background-image: url("./images/pattern-background-desktop.svg");
+background-repeat: repeat-x;
+background-color: hsl(225, 100%, 94%);
+color: hsl(224, 23%, 55%);
+font-family: 'Red Hat Display',sans-serif;
+font-weight: 200;
+text-align: center;
+}
+
+
+ /* Parent Card Section  */
+
+ .parent-card {
+   background-color: #fff;
+   border-radius: 20px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   width: 25rem;
+   line-height: 1.5;
+ }
+
+
+ /* Music Girl Image Section */
+
+.music-girl-image {
+  border-radius: 20px 20px 0 0 ;
+  width: 25rem;
+}
+
+
+/* Text Section */
+
+.textPart {
+  padding: 1rem 2rem;
+}
+
+h2 {
+  font-weight: 900;
+  color: black;
+}
+
+/* Annual Plan Section */
+
+.annualPlan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  margin: 8% 0;
+}
+
+.anPla {
+  display: inline-block;
+  position: relative;
+}
+
+.music-icon {
+ top: 0.75rem;
+ width: 2.5rem;
+ padding: 3% 5% 3% 3%;
+}
+
+.annPla-1 {
+  color: black;
+  bottom: 1.75rem;
+  font-weight:bold ;
+}
+
+.annPla-2 {
+  right : 5.50rem;
+}
+
+.annPla-3 {
+  bottom: 1rem;
+  right : 1.25rem;
+}
+
+
+/* Proceed to Pay Section */
+
+.proceedPay {
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  color: #fff;
+  font-weight:bold;
+  height: 2.75rem;
+  box-shadow: 0px 20px 40px -15px hsl(245, 75%, 52%);
+}
+
+.proPay {
+  padding-top: 3%;
+}
+
+/* Cancel Order Section */
+
+.canOrd {
+  font-weight:bold;
+  padding: 5% 0;
+}
+
+
+/* Hover Section */
+
+a:hover {
+  color: #766CF1;
+  text-decoration: none;
+}
+
+.proceedPay:hover {
+  background-color: #766CF1;
+  box-shadow: 0px 20px 40px -15px #766CF1;
+}
+
+.canOrd:hover {
+  color: black ;
+}
+
+
+/* Mobile Responsive Section */
+
+@media (max-width:630px) {
+
+  body{
+    background-image: url("./images/pattern-background-mobile.svg");
+    font: 18px;
+    line-height: 0;
+  }
+
+  .parent-card, .music-girl-image{
+    width: 18rem;
+  }
+
+  .textPart {
+    padding: 0 0.50rem;
+  }
+
+  h2, .ordSum, .annualPlan, .proceedPay, .cancelOrder{
+    position: relative;
+    bottom: 1rem;
+  }
+
+ .canOrd {
+   padding: 1% 0;
+ }
+
+.annualPlan {
+  margin: 0;
+  height: 4.5em;
+}
+
+.music-icon {
+ padding: 3% 3% 1% 1%;
+}
+
+ .annPla-2 {
+   right : 5.55rem;
+ }
+
+ .annPla-3 {
+   bottom: 3.25rem;
+   left: 5rem;
+ }
+ 
+}
